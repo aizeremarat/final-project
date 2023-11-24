@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Philosopher&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&family=Philosopher&display=swap');
+:root {
+    --white-color:                  #ffffff;
+    --primary-color:                #5d52ba;
+    --secondary-color:              #0dcaf0;
+    --section-bg-color:             #f0f8ff;
+    --custom-btn-bg-color:          #08387b;
+    --social-icon-link-bg-color:    #7f73eb;
+    --dark-color:                   #000000;
+    --p-color:                      #717275;
+    --border-color:                 #e9eaeb;
+  
+    --body-font-family:             'Montserrat', sans-serif;
+  
+    --h1-font-size:                 62px;
+    --h2-font-size:                 48px;
+    --h3-font-size:                 36px;
+    --h4-font-size:                 32px;
+    --h5-font-size:                 24px;
+    --h6-font-size:                 22px;
+    --p-font-size:                  20px;
+    --btn-font-size:                16px;
+    --copyright-font-size:          14px;
+  
+    --border-radius-large:          100px;
+    --border-radius-medium:         30px;
+    --border-radius-small:          10px;
+  
+    --font-weight-thin:             100;
+    --font-weight-light:            300;
+    --font-weight-normal:           400;
+    --font-weight-semibold:         600;
+    --font-weight-bold:             700;
+  }
+
+main{
+    background-color: #e0e5ed;
+}
+.navbar {
+    background: #D2E0FB;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-family:'Montserrat', sans-serif;
+    font-size: 25px;
+  }
+  
+  .navbar-brand {
+    font-size: 20px;
+    font-weight: var(--font-weight-bold);
+  }
+  
+  .logo-image {
+    display: block;
+    width: 65px;
+    margin-right: 15px;
+  }
+  
+  .logo-text {
+    color: var(--primary-color);
+    font-size: var(--h4-font-size);
+    display: block;
+    line-height: normal;
+  }
+  
+  .logo-slogan {
+    color: var(--custom-btn-bg-color);
+    font-size: 12px;
+    font-weight: var(--font-weight-bold);
+    text-transform: uppercase;
+  }
+  .nav-item{
+        margin-left: 20px;
+        margin-right: 20px;
+  }
+  .navbar-brand,
+  .navbar-brand:hover {
+    color: var(--primary-color);
+  }
+  
+  .navbar-expand-lg .navbar-nav .nav-link {
+    margin-right: 0;
+    margin-left: 0;
+    padding: 20px;
+  }
+  
+  .navbar-expand-lg .navbar-nav {
+    width: 100%;
+  }
+  
+  .navbar-nav .nav-link {
+    display: inline-block;
+    color: var(--p-bg-color);
+    font-size: var(--menu-font-size);
+    font-weight: var(--font-weight-medium);
+    position: relative;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  
+  .navbar-nav .nav-link.active,
+  .navbar-nav .nav-link:hover {
+    color: var(--custom-btn-bg-color);
+  }
+  
+  .dropdown-menu {
+    background: var(--white-color);
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
+    border: 0;
+    padding: 0;
+    margin-top: 20px;
+  }
+  
+  .dropdown-item {
+    display: inline-block;
+    color: var(--p-bg-color);
+    font-size: var(--menu-font-size);
+    font-weight: var(--font-weight-medium);
+    border-bottom: 1px solid var(--border-color);
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  
+  .dropdown-menu li:last-child .dropdown-item {
+    border-bottom: 0;
+  }
+  
+  .dropdown-item.active, 
+  .dropdown-item:active,
+  .dropdown-item:focus, 
+  .dropdown-item:hover {
+    background: transparent;
+    color: var(--custom-btn-bg-color);
+  }
+  
+  .dropdown-toggle::after {
+    content: "\f282";
+    display: inline-block;
+    font-family: bootstrap-icons !important;
+    font-size: var(--copyright-font-size);
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    vertical-align: -.125em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    left: 2px;
+    border: 0;
+  }
+  
+  @media screen and (min-width: 992px) {
+    .dropdown:hover .dropdown-menu {
+      display: block;
+      margin-top: 0;
+    }
+  }
+  
+  .navbar-toggler {
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    margin: 0;
+    width: 30px;
+    height: 35px;
+    outline: none;
+  }
+  
+  .navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+  }
+  
+  .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+    background: transparent;
+  }
+  
+  .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before,
+  .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
+    transition: top 300ms 50ms ease, -webkit-transform 300ms 350ms ease;
+    transition: top 300ms 50ms ease, transform 300ms 350ms ease;
+    transition: top 300ms 50ms ease, transform 300ms 350ms ease, -webkit-transform 300ms 350ms ease;
+    top: 0;
+  }
+  
+  .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
+    transform: rotate(45deg);
+  }
+  
+  .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
+    transform: rotate(-45deg);
+  }
+  
+  .navbar-toggler .navbar-toggler-icon {
+    background: var(--dark-color);
+    transition: background 10ms 300ms ease;
+    display: block;
+    width: 30px;
+    height: 2px;
+    position: relative;
+  }
+  
+  .navbar-toggler .navbar-toggler-icon:before,
+  .navbar-toggler .navbar-toggler-icon:after {
+    transition: top 300ms 350ms ease, -webkit-transform 300ms 50ms ease;
+    transition: top 300ms 350ms ease, transform 300ms 50ms ease;
+    transition: top 300ms 350ms ease, transform 300ms 50ms ease, -webkit-transform 300ms 50ms ease;
+    position: absolute;
+    right: 0;
+    left: 0;
+    background: var(--dark-color);
+    width: 30px;
+    height: 2px;
+    content: '';
+  }
+  
+  .navbar-toggler .navbar-toggler-icon::before {
+    top: -8px;
+  }
+  
+  .navbar-toggler .navbar-toggler-icon::after {
+    top: 8px;
+  }
+  
+  footer {
+    background-color: #001f3f; /* Dark blue color */
+    color: #fff; /* Text color */
+    padding: 10px;
+    text-align: center;
+}

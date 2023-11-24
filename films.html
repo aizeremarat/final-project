@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kazakh language</title>
+    <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-dTf4yr4Yn6Zm+HHscaVjktqCiI6KGdVEFi0TL/QSpTOW9b//EsYDwPnmCjRo1cPa1m2Q8Xi6qtRr9J/x4qAJLQ==" crossorigin="anonymous" />
+
+<style>
+    body{
+        background-color: #e2e6ea;
+    }
+    *{
+        font-family: 'Montserrat', sans-serif;  
+    }
+    h2{
+        text-align: center;
+        margin-left:00px;
+    }
+    p{
+        margin: 20px;
+    }
+    .box {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    animation: animates 20s linear infinite; 
+    margin: 100px;
+    margin-right:500px;
+    }
+@keyframes animates { 
+    0% {
+        transform: perspective(1000px) rotateY(0deg); 
+    }
+    100% {
+        transform: perspective(1000px) rotateY(360deg);
+    }
+}
+
+.box span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i)*45deg)) translateZ(400px);
+    -webkit-box-reflect: below 0px linear-gradient(transparent, transparent, #0004);
+}
+
+.box span img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.film-container:hover {
+            background-color: #f0f0f0;
+            cursor: pointer;
+        }
+
+        .film-container {
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            padding: 15px;
+            transition: background-color 0.3s ease;
+        }
+
+        .film-container:hover {
+            background-color: #e2e6ea;
+            cursor: pointer;
+        } 
+        
+        section {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .film-container {
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            padding: 15px;
+            transition: background-color 0.3s ease;
+            opacity: 0;
+        }
+
+        .film-container:hover {
+            background-color: #e2e6ea;
+            cursor: pointer;
+        }
+
+    
+</style>
+</head>
+<body>  
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <img src="assets/img/logo.png" class="img-fluid logo-image">
+                    <div class="d-flex flex-column">
+                        <strong class="logo-text">Kazakh</strong>
+                        <small class="logo-slogan">language</small>
+                    </div>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav align-items-center ms-lg-5">
+                        <li class="nav-item">
+                            <a class="nav-link" href="history.html">History</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Modern trends</a>
+                            <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
+                                <li><a class="dropdown-item" href="films.html">Films</a></li>
+                                <li><a class="dropdown-item" href="books.html">Books</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item ms-lg-auto">
+                            <a class="nav-link" href="quiz.html">Take a quiz</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h2 style="margin-top: 20px;">Films</h2>
+        <section>
+            
+
+
+            <div class="box">
+                <span style="--i:1;"><img src="assets/img/film1.jpg"></span>
+                <span style="--i:2;"><img src="assets/img/film2.jpg"></span>
+                <span style="--i:3;"><img src="assets/img/film3.jpg"></span>
+                <span style="--i:4;"><img src="assets/img/film4.jpg"></span>
+                <span style="--i:5;"><img src="assets/img/film5.jpg"></span>
+            </div>
+        </section>
+        <p style="text-align: center;">Press Enter to see description</p>
+
+           
+            <div class="film-container">
+                
+            <p><b>Tomiris (2019)</b></p>
+            <p>Tomyris was the queen of the Massagetae, an Iranian people from a Scythian pastoral-nomadic confederation of Central Asia east of the Caspian Sea, in parts of modern-day Turkmenistan, Afghanistan, western Uzbekistan, and southern Kazakhstan. She reigned in the 6th century BC. Tomyris led her armies to defend against an attack by Cyrus the Great of the Achaemenid Empire, and, according to Herodotus, defeated and killed him in 530 BC.
+
+                Tomyris's archenemy Cyrus I was the founder of the Achaemenid Empire, the first Persian empire. Under his rule the empire embraced all the previous civilized states of the ancient Near East, expanded vastly and eventually conquered most of Western Asia and much of Central Asia. From the Mediterranean Sea and Hellespont in the west to the Indus River in the east, Cyrus created the largest empire the world had yet seen.</p>
+            </div>
+
+            <div class="film-container">
+            <p><b>Reketir (2007)</b></p>
+            <p>This is a biographical story about the life of a young man, Sayan Bekkarimov, who himself comments on what is happening throughout the film in the first person.
+
+                The film begins with Sayan talking about his life since birth. Sayan Bekkarimov was born in 1970 in Almaty into a family of Soviet intellectuals. At the age of 12, at the insistence of his father, Sayan began attending the boxing section, gradually he achieved success, becoming the champion of the Kazakh SSR. Having failed the entrance exams to the Kazakh State University, Sayan ends up in the army. However, after serving in 1991, he managed to enter a technical university. After the collapse of the USSR, his parents lost their jobs and social status, his mother was forced to sell on the street, and the family experienced difficulties. Nevertheless, Sayan continued boxing. Soon, he dropped out of his studies at a technical university and accepted an offer to join a local criminal gang, which was mainly engaged in extorting money from businessmen.</p>
+            </div>
+
+            <div class="film-container">
+            <p><b>Baqyt (2022)</b></p>
+            <p>A woman is standing in front of the mirror. She is beautiful and has a striking face and strong cheekbones. She is bracing herself, a last vestige of self-respect driving her on. Her body is black and blue from the marks of many years of abuse. She swathes it in the orange dress that represents her working life. In this world she is a successful influencer promoting a product line called “Happiness” that – as she demonstrates in her hypnotic sales pitches – is supposed to make women attractive and happy. But terror reigns at home; it even reigns in her newlywed daughter’s house too. A self-determined life is something about which a woman in Kazakhstan dares not even dream.
+
+                Askar Uzabayev’s deceptively calm, demanding and persistent work examines the worldwide phenomenon of domestic violence, breaking it down here in the context of misogynistic Kazakh rituals. This film will leave its mark on anyone prepared to face the brutality of the average (married) man and the spiral of repression it causes. Having the courage not to look away and instead to speak out and fight back is precisely what this film is about. Bayan Maxatkyzy, a TV blog celebrity with millions of followers, has shown the way forward. Baqyt, which she produced herself, is a legacy to this.
+                </p>
+
+            </div>
+            <div class="film-container">
+            <p><b>Districts (2016)</b></p>
+            <p>Alma-Ata, 1987. The main character of the film is 16-year-old Arsen, who moves from the suburbs to the city center and goes to a new school. At the new school, he makes friends with classmates who are active participants in the so-called “District Movements.” At the same time, Arsen is faced with street, teenage hierarchy and violence. And he is faced with a choice: to become like everyone else or remain true to himself.</p>
+    
+            <p><b>The Old Man (2012)</b></p>
+            <p>The film takes place in rural areas in modern Kazakhstan. The main character, an old man, about to drive the sheep to pasture, got lost in the steppe. In an attempt to find the right path, he runs into a pack of wolves several times.
+
+                Meanwhile, his grandson goes out in search of his grandfather with the help of neighbors and rescue services.</p>
+            </div>
+        </section>
+
+            
+        
+    </main>
+    
+    <footer>
+        <p> Kazakh Language in Modern Life  | Final project <br> Group: IT-2206 <br> Aizere Marat</p>
+    </footer>
+
+    <script>
+        document.addEventListener('keypress', function (event) {
+            if (event.key === 'Enter') {
+                revealNextFilm();
+            }
+        });
+
+        let currentIndex = 0;
+        const filmContainers = document.querySelectorAll('.film-container');
+
+        function revealNextFilm() {
+            if (currentIndex < filmContainers.length) {
+                filmContainers[currentIndex].style.opacity = '1';
+                currentIndex++;
+            }
+        }
+    </script>
+</body>
+</html>
+
+</html>
